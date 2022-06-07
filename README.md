@@ -8,6 +8,8 @@ pharmacy management system; it is used to manage most pharmacy related activitie
 pharmacy. We are using PHP language, MySQL for database, for frontend HTML and
 JavaScript, Software XAMPP.
 
+Team of Two : 1.Anooj Raj
+              2.Chinmaya Bhat K K
 
 SNAPSHOTS :-
 
