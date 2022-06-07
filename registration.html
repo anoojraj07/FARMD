@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+  
+<body>
+  <div class="container" style="transform : translateY(-220px);">
+    <div class="title"><div style="transform: translateX(200px);color: white;"><b>REGISTRATION</b></div></div>
+    <div class="content">
+      <form action="insert.php" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" name="firstname" placeholder="First Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="email" placeholder="abc@gmail.com" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Adhar UID</span>
+            <input type="text" name="adharuid" placeholder="12 Digits" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Ration Card Number</span>
+            <input type="text" name="rationcard" placeholder="5 Digits" pattern="[0-9]{5}" required >
+          </div>
+          <div class="input-box">
+            <span class="details">Total Family Members</span>
+            <input type="text"  name="family" placeholder="As per Ration-Card" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Total Area of land in Acre</span>
+            <input type="text"  name="acre" placeholder="Acre" required>
+        </div>
+            <div class="input-box">
+                <span class="details">Total Area of land in Cents</span>
+                <input type="text"  name="cents" placeholder="cents" required>
+              </div>   
+          </div>
+              
+                <span class="details" style="font-size: 25px;"><b>Bank Details:</b></span>
+            
+            <div class="user-details">
+            <div class="input-box">
+                <span class="details">Choose Bank</span>
+                <select name="bank_name">
+                    <option value="State Bank of India">State Bank of India</option>
+                    <option value="Canara Bank">Canara Bank</option>
+                    <option value="Bank of Baroda">Bank of Baroda</option>
+                    <option value="Karnataka Bank">Karnataka Bank</option>
+              
+                </select><br><br>
+              </div> 
+          
+          
+          <div class="input-box">
+            <span class="details">Account Number</span>
+            <input type="text" name="accountnumber" placeholder="10 Digits" pattern="[0-9]{10}" required>
+          </div>
+          <div class="input-box">
+            <span class="details">IFSC Code</span>
+            <input type="text" name="ifsccode" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span >Password</span>
+            <input type="password" class="details" id="ps" name="pass" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span >Confirm Password</span>
+            <input type="password" class="details" id="cps" name="confpass" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <div class="gender-details">
+        Gender: <br><select name="option">
+                            <option>MALE</option>
+                            <option>FEMALE</option>
+                            <option>OTHERS</option>
+                            <option>PREFER NOT TO SAY</option><br><br><br>
+        </select>
+        </div>
+    </div>
+        <div class="button">
+          <input type="submit" name="register" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

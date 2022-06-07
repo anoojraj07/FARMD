@@ -1,0 +1,61 @@
+body{
+    margin:  0;
+    height: 100%;
+    overflow:  hidden;
+    }
+    .background{
+        /* background: url(reg.jpeg); */
+        background-color: lightblue;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: contain;
+        overflow: scroll;
+        height: 100vh;
+        width:  100%;
+    }
+    .blur{
+        backdrop-filter:  blur(1px);
+        height:  100vh;
+        width:  100%;
+        /* top:auto; */
+    }
+    #main
+    {
+        top: 10px;
+        /* transform: translate(10, 25%); */
+        border: 1px solid peachpuff;
+        padding: 15px;
+        margin: auto;
+        width: 500px;
+        height: 1200px;
+        background: peachpuff;
+    }
+    h1{
+        color: black;
+        text-align: center;
+        font-style: bold;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 0.1;
+    }
+    p{
+        font-weight: 900;
+        font-style: bold;
+    }
+    #signup-btn{
+        background-color: silver;
+        color: black;
+        padding: 8px 12px;
+        text-align: center;
+        display: flex;
+        font-size: 17px;
+        border-style: groove;
+        margin: auto;
+        justify-content: center;
+        width: 19%;
+        height: 8%;
+        border-color: silver;
+        border-width: 3px;
+        font-weight: 600;
+    }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style_sub.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Subsidy Application</title>
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+<body>
+	<div class="container">
+    <div class="title"><div style="transform: translateX(200px);color: black;"><b>Apply For Subsidy</b></div></div>
+    <div class="content">
+      <form action="subs.php" method="POST" enctype="multipart/form-data">
+        <div class="user-details">
+          <div class="input-box">
+		<span class="details"><strong>Date of Purchase</strong></span>
+		<input type="date" name="dop" placeholder="dD/MM/YYYY" required><br><br>
+	</div>
+	</div>
+		<div class="title" style="text-align: center;font-size: 35px;transform: translateX(10px);"><b><i> Products Purchased </i></b></div><br><br>
+		<span class="details" style="font-size: 25px;"><strong>Machineries:</strong></span>
+		<div class="user-details">
+	<div class="input-box">
+		<span class="details"><strong>Weed Cutter</strong></span>
+		<input type="chechbox" name="wc" placeholder="Amount in Rupees Only" required><br>
+	</div>
+	<div class="input-box">
+		<span class="details"><strong>Sprayer</strong></span>
+		<input type="chechbox" name="sp" placeholder="Amount in Rupees Only" required><br>
+	</div>
+	<div class="input-box">
+		<span class="details"><strong>Tiller</strong></span>
+		<input type="chechbox" name="ti" placeholder="Amount in Rupees Only" required><br>
+	</div>
+	<div class="input-box">
+		<span class="details"><strong>Tractor</strong></span>
+		<input type="chechbox" name="tr" placeholder="Amount in Rupees Only" required>
+	</div>
+</div><br><br>
+	  <span class="details" style="font-size: 25px"><strong>Manure</strong></span><br>
+	  	<div class="user-details">
+	<div class="input-box">
+		<span class="details"><strong>NPK</strong></span>
+		<input type="chechbox" name="npk" placeholder="Amount in Rupees Only" required><br>
+	</div>
+	<div class="input-box">
+		<span class="details"><strong>Bio Fertilizer</strong></span>
+		<input type="chechbox" name="bio" placeholder="Amount in Rupees Only" required><br>
+	</div>
+</div>
+
+<br><br>
+	<span class="details" style="font-size: 25px"><strong>Pesticides</strong></span>
+	<div class="user-details">
+	<div class="input-box">
+		<span class="details"><strong>Fungal</strong></span>
+		<input type="chechbox" name="fungal" placeholder="Amount in Rupees Only"  required><br>
+	</div>
+	<div class="input-box">
+		<span class="details"><strong>Viral</strong></span>
+		<input type="chechbox" name="viral" placeholder="Amount in Rupees Only" required><br>
+	</div>
+</div>
+<br><br>
+	<label style="font-size: 25px;"><strong>Upload Bill</strong></label><br><br>
+	<input type="file" id="myFile" name="file" required>
+	<div class="user-details">
+<div class="button">
+<div class="wrapper">
+  <a class="cta" href="subs.php">
+	  <input type="submit" value="Submit">
+  </a>
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>

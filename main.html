@@ -1,0 +1,167 @@
+<?php
+  require_once 'database.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      h1{
+        font-weight: 900;
+      }
+      body{
+        background-image: radial-gradient(circle, #FFDEE9 0%, #B5FFFC 100%);
+      }
+      h1{
+        text-align: center;
+      }
+      .display-1{
+        color: black;
+      }
+      .card-img-top{
+        box-shadow: black;
+        margin: auto;
+      }
+    </style>
+    
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <img src="Farmd.jpg" width="50" height="70"></img>
+      <a class="navbar-brand" href="#">FarmD</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="registration.html">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Admin_login.html">Login as Admin</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Mail Us</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container">
+        <h1 class="display-1"><strong>Farmer's Database and Subsidy Availing System</strong></h1>
+        <br><br>
+        <div class="card text-white bg-dark mb-3 border-info mb-3">
+          <img src="index1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">NEWS</h5>
+            <p class="card-text">Latest News in the field of Agriculture</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="card text-white bg-dark mb-3">
+            <div class="car h-100">
+            <img src="card1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rs 2.97 lakh cr more food subsidy to be released this fiscal; Punjab, Haryana asked to use e-mode for MSP payments</h5>
+              <p class="card-text">The government will release nearly Rs 3 lakh crore more food subsidy in the remaining two months of the current fiscal as it looks to clear all previous backlogs, the food ministry said on Friday, adding that states such as Punjab and Haryana will compulsorily have to use electronic modes to pay crop price (MSP) to farmers.
+
+                While the usage of electronic modes to transfer the minimum support price (MSP) to farmers is to check diversion and avoid delays, the new system would not end the ..</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          </div>
+          <div class="card text-white bg-dark mb-3">
+            <img src="card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cabinet nod for additional fertiliser subsidy worth Rs 14,775 crore</h5>
+              <p class="card-text"> The Union Cabinet on Wednesday raised the subsidies for DAP and some other non-urea fertilisers by Rs 14,775 crore to keep the price of crop nutrients for farmers low despite the rising costs.
+
+                The move will also help in providing relief to the farmers amid the pandemic.
+                
+                After urea, Di-Ammonium Phosphate (DAP) fertiliser is the most widely used one in the country.
+                
+                Last month, the Centre decided to increase subsidy on DAP fertiliser by 140 per cent. The decision was taken at a high-level meeting chaired by Prime Minister Narendra Modi.
+                Briefing the media, Minister of State for Chemicals and Fertilisers Mansukh Mandaviya on Wednesday said the Cabinet Committee on Economic Affairs (CCEA) has approved increasing the subsidy amount for DAP fertiliser for the benefits of farmers.
+
+                “Farmers will continue to get DAP at the old rate of Rs 1,200 per bag,” he said.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card text-white bg-dark mb-3">
+            <img src="index3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Record foodgrains production likely in 2022;farm laws repeal, price rise bitter pills for agri sector</h5>
+              <p class="card-text">India achieved record foodgrains production this year but the withdrawal of three agri-reform laws and spike in cooking oil prices cast a shadow on the country's resilient agriculture sector that is on course for better harvest in 2022 despite pandemic blues.
+
+                While soaring production of foodgrains that also helped the government provide free additional rations for COVID-hit poor families for many months together came as a relief, the passing year will be remembered for the long drawn farmers' protest at Delhi borders against the three laws and subsequent repeal of the legislations.
+                
+                The Indian agriculture sector, which was among the few segments that remained robust amid the pandemic gales, is expected to register a growth rate of 3.5 per cent in the current financial year ending March 2022. </p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h2>Features of FarmD</h2>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card text-white bg-dark mb-">
+                <img src="subsidy.jpeg" style="height: 300px;" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Subsidy</h5>
+                  <p class="card-text">To provide subsidy for the products purchased or funded by farmer's</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-white bg-dark mb-">
+                <img src="opti.jpg" style="height: 300px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Optimization</h5>
+                  <p class="card-text">For proper utilization with systematic approach of government funds.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-white bg-dark mb-">
+                <img src="est.png" style="height: 300px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Established</h5>
+                  <p class="card-text">Ready Database of all farmers for statistical calculations and planning for every Financial Year</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-white bg-dark mb-">
+                <img src="r&d.jpg" style="height: 300px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Research</h5>
+                  <p class="card-text">Can be inheritted for further research and development in the farming domain using modern technology for nation building</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
